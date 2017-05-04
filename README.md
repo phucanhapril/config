@@ -4,6 +4,8 @@ _how i made my terminal cozy af, a work in progress_
 ## iterm 2 & oh my zsh
 from this helpful [gist](https://gist.github.com/kevin-smets/8568070)
 
+![screenshot](https://github.com/phucanhapril/config/raw/master/img/terminal-pt1.png "iterm 2 & oh my zsh screenshot")
+
 **iterm 2**
 * install homebrew
 
