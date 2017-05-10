@@ -36,3 +36,6 @@ from this helpful [gist](https://gist.github.com/kevin-smets/8568070)
   `git clone git://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions`
 
   add to `~/.zshrc`: `plugins=(zsh-autosuggestions)`
+
+## vim
+*fancy stuff [coming right up](https://github.com/phucanhapril/config/tree/master/vim)*

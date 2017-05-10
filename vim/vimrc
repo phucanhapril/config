@@ -1,10 +1,14 @@
+" pathogen
+execute pathogen#infect()
+filetype plugin indent on
+" utf-8 stuff
 scriptencoding utf-8
 set encoding=utf-8
 " keymappings
 inoremap jj <esc>
 " dracula theme
 syntax on
-color dracula
+" color dracula
 " tab = 2 spaces
 set tabstop=2 shiftwidth=2 expandtab
 set autoindent smartindent
