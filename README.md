@@ -22,14 +22,17 @@ from this helpful [gist](https://gist.github.com/kevin-smets/8568070)
 * install [oh my zsh](https://github.com/robbyrussell/oh-my-zsh)
 
   `sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
-   edit `~/.zshrc`: `DEFAULT_USER="<username>"` and `ZSH_THEME="agnoster"`
+
+  edit `~/.zshrc`: `DEFAULT_USER="<username>"` and `ZSH_THEME="agnoster"`
 
 * enable syntax highlighting
 
   `brew install zsh-syntax-highlighting`
+
   add to `~/.zshrc`: `source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh`
 
 * enable [auto-suggestion](https://github.com/zsh-users/zsh-autosuggestions#oh-my-zsh)
 
   `git clone git://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions`
+
   add to `~/.zshrc`: `plugins=(zsh-autosuggestions)`
