@@ -23,7 +23,9 @@ from this helpful [gist](https://gist.github.com/kevin-smets/8568070)
 
   `sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
 
-  edit `~/.zshrc`: `DEFAULT_USER="<username>"` and `ZSH_THEME="agnoster"`
+  edit `~/.zshrc`: `DEFAULT_USER="<username>"`
+
+* set up [dracula theme](https://draculatheme.com/zsh/)
 
 * enable syntax highlighting
 
