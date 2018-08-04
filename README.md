@@ -39,5 +39,11 @@ from this helpful [gist](https://gist.github.com/kevin-smets/8568070)
 
   add to `~/.zshrc`: `plugins=(zsh-autosuggestions)`
 
+## bash aliases
+
+  `ln -s $CONFIG/bash/bashrc ~/.bashrc`
+
+_$CONFIG_ should be the path to this repo
+
 ## vim
 *fancy stuff [coming right up](https://github.com/phucanhapril/config/tree/master/vim)*

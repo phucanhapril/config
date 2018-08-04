@@ -42,7 +42,7 @@ let s:bgdarker  = ['#191A21', 234]
 let s:subtle    = ['#424450', 238]
 
 let s:selection = ['#44475A', 239]
-let s:comment   = ['#6272A4',  61]
+let s:comment   = ['#8fa4e5',  61]
 let s:cyan      = ['#8BE9FD', 117]
 let s:green     = ['#50FA7B',  84]
 let s:orange    = ['#FFB86C', 215]
