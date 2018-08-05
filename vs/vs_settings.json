@@ -1,0 +1,47 @@
+{
+    "editor.tabSize": 2,
+    "workbench.colorTheme": "Dracula",
+    "terminal.integrated.shell.osx": "zsh",
+    "editor.minimap.enabled": false,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["Z", "Z"],
+            "commands": [
+                ":wq"
+            ]
+        }
+    ],
+    "explorer.confirmDelete": false,
+    "window.zoomLevel": 0,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.formatOnPaste": true,
+    "workbench.colorCustomizations": {
+    
+        "terminal.foreground": "#ebebeb",
+        "terminal.ansiBlack": "#000000",
+        "terminal.ansiBlue": "#d1b3fe",
+        "terminal.ansiBrightBlack": "#686868",
+        "terminal.ansiBrightBlue": "#d1b3fe",
+        "terminal.ansiBrightCyan": "#9aedfe",
+        "terminal.ansiBrightGreen": "#5af78e",
+        "terminal.ansiBrightMagenta": "#ff92d0",
+        "terminal.ansiBrightRed": "#ff6e67",
+        "terminal.ansiBrightWhite": "#ffffff",
+        "terminal.ansiBrightYellow": "#f4f99d",
+        "terminal.ansiCyan": "#9aedfe",
+        "terminal.ansiGreen": "#5af78e",
+        "terminal.ansiMagenta": "#ff92d0",
+        "terminal.ansiRed": "#ff6e67",
+        "terminal.ansiWhite": "#c7c7c7",
+        "terminal.ansiYellow": "#f4f99d",
+        "terminal.selectionBackground": "#565a6d",
+        "terminalCursor.foreground": "#c7c7c7"
+    },
+    "terminal.integrated.fontWeightBold": "100"
+}
