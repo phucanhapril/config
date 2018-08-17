@@ -1,8 +1,18 @@
-{
-    "editor.tabSize": 2,
-    "workbench.colorTheme": "Dracula",
-    "terminal.integrated.shell.osx": "zsh",
+{   
+    "editor.formatOnPaste": true,
     "editor.minimap.enabled": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.renderWhitespace": "all",
+    "editor.tabSize": 2,
+    "editor.wordWrap": "on",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "javascript.implicitProjectConfig.experimentalDecorators": true,
+    "prettier.eslintIntegration": true,
+    "terminal.integrated.fontWeightBold": "100",
+    "terminal.integrated.shell.osx": "zsh",
+    "tslint.jsEnable": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
     "vim.insertModeKeyBindings": [
         {
             "before": ["j", "j"],
@@ -17,10 +27,7 @@
             ]
         }
     ],
-    "explorer.confirmDelete": false,
     "window.zoomLevel": -1,
-    "editor.multiCursorModifier": "ctrlCmd",
-    "editor.formatOnPaste": true,
     "workbench.colorCustomizations": {
         "terminal.foreground": "#ebebeb",
         "terminal.ansiBlack": "#000000",
@@ -42,12 +49,6 @@
         "terminal.selectionBackground": "#565a6d",
         "terminalCursor.foreground": "#c7c7c7"
     },
-    "terminal.integrated.fontWeightBold": "100",
-    "prettier.eslintIntegration": true,
-    "javascript.implicitProjectConfig.experimentalDecorators": true,
-    "explorer.confirmDragAndDrop": false,
-    "editor.renderWhitespace": "all",
-    "editor.wordWrap": "on",
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "tslint.jsEnable": true
+    "workbench.colorTheme": "Dracula",
 }
+
