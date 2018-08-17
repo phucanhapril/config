@@ -1,0 +1,53 @@
+DEFAULT_USER="phucanhtran"
+ZSH_THEME="dracula"
+
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export ZSH="/Users/phucanhtran/.oh-my-zsh"
+
+plugins=(
+  git,
+  zsh-autosuggestions
+)
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $ZSH/oh-my-zsh.sh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# aliases
+# general
+alias vz="vim ~/.zshrc"
+alias sz="source ~/.zshrc"
+
+# git
+alias gac="git add -A && git cz"
+alias glo="git log --oneline"
+alias gbr="git branch"
+alias gch="git checkout"
+alias gdiff="git diff"
+alias gstat="git status"
+alias gpull="git pull"
+alias gpup="git push --set-upstream origin"
+g1c () {
+  git fetch
+  git reset $(git merge-base master $1)
+}
+
+# parsley
+alias parsley="cd ~/parsley"
+alias api="cd ~/parsley/api"
+alias apis="cd ~/parsley/api && ./do up"
+alias apik="cd ~/parsley/api && ./do down"
+alias tks="cd ~/parsley/traefik && make up"
+alias my="cd ~/parsley/my-parsley"
+alias mys="cd ~/parsley/my-parsley && yarn start"
+alias myk="cd ~/parsley/my-parsley && yarn stop"
+alias join="cd ~/parsley/join-parsley"
+alias joins="cd ~/parsley/join-parsley && npm start"
+alias joink="cd ~/parsley/join-parsley && npm stop"
+alias on="cd ~/parsley/onboarding"
+alias pp="cd ~/parsley/provider-portal"
+alias pps="cd ~/parsley/provider-portal && npm start"
+
