@@ -18,11 +18,10 @@
         }
     ],
     "explorer.confirmDelete": false,
-    "window.zoomLevel": 0,
+    "window.zoomLevel": -1,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.formatOnPaste": true,
     "workbench.colorCustomizations": {
-    
         "terminal.foreground": "#ebebeb",
         "terminal.ansiBlack": "#000000",
         "terminal.ansiBlue": "#d1b3fe",
@@ -43,5 +42,12 @@
         "terminal.selectionBackground": "#565a6d",
         "terminalCursor.foreground": "#c7c7c7"
     },
-    "terminal.integrated.fontWeightBold": "100"
+    "terminal.integrated.fontWeightBold": "100",
+    "prettier.eslintIntegration": true,
+    "javascript.implicitProjectConfig.experimentalDecorators": true,
+    "explorer.confirmDragAndDrop": false,
+    "editor.renderWhitespace": "all",
+    "editor.wordWrap": "on",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "tslint.jsEnable": true
 }

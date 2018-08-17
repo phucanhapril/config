@@ -18,7 +18,7 @@ alias gstat="git status"
 alias gpull="git pull"
 alias gpup="git push --set-upstream origin"
 g1c () {
-  git fetch master
+  git fetch
   git reset $(git merge-base master $1)
 }
 
@@ -35,3 +35,5 @@ alias join="cd ~/parsley/join-parsley"
 alias joins="cd ~/parsley/join-parsley && npm start"
 alias joink="cd ~/parsley/join-parsley && npm stop"
 alias on="cd ~/parsley/onboarding"
+alias pp="cd ~/parsley/provider-portal"
+alias pps="cd ~/parsley/provider-portal && npm start"
