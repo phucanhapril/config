@@ -27,21 +27,13 @@ from this helpful [gist](https://gist.github.com/kevin-smets/8568070)
 
 * set up [dracula theme](https://draculatheme.com/zsh/)
 
-* enable syntax highlighting
+* enable syntax highlighting & [auto-suggestion](https://github.com/zsh-users/zsh-autosuggestions#oh-my-zsh)
 
   `brew install zsh-syntax-highlighting`
 
-  add to `~/.zshrc`: `source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh`
-
-* enable [auto-suggestion](https://github.com/zsh-users/zsh-autosuggestions#oh-my-zsh)
-
   `git clone git://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions`
 
-  add to `~/.zshrc`: `plugins=(zsh-autosuggestions)`
-
-## bash aliases
-
-  `ln -s $CONFIG/bash/bashrc ~/.bashrc`
+  `ln -s $CONFIG/zsh/zshrc ~/.zshrc`
 
 _$CONFIG_ should be the path to this repo
 
