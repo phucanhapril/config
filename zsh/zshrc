@@ -30,7 +30,9 @@ alias gdiff="git diff"
 alias gstat="git status"
 alias gpull="git pull"
 alias gpup="git push --set-upstream origin"
-g1c () {
+alias gunstage="git reset"
+alias guncommit="git reset HEAD^"
+gsquash () {
   git fetch
   git reset $(git merge-base master $1)
 }
@@ -40,6 +42,7 @@ alias parsley="cd ~/parsley"
 alias api="cd ~/parsley/api"
 alias apis="cd ~/parsley/api && ./do up"
 alias apik="cd ~/parsley/api && ./do down"
+alias apikk="cd ~/parsley/api && docker-compose down"
 alias tks="cd ~/parsley/traefik && make up"
 alias my="cd ~/parsley/my-parsley"
 alias mys="cd ~/parsley/my-parsley && yarn start"
@@ -48,6 +51,13 @@ alias join="cd ~/parsley/join-parsley"
 alias joins="cd ~/parsley/join-parsley && npm start"
 alias joink="cd ~/parsley/join-parsley && npm stop"
 alias on="cd ~/parsley/onboarding"
-alias pp="cd ~/parsley/provider-portal"
-alias pps="cd ~/parsley/provider-portal && npm start"
+alias dr="cd ~/parsley/dr-parsley"
+alias drs="cd ~/parsley/dr-parsley && npm start"
 
+# js workflow
+alias rly="npm run relay"
+alias rlyd="cd ~/parsley/relay-devtools && node lib/standalone/launchApp.js"
+alias hidegen="printf '{\n\t\"folders\": [\n\t\t{\n\t\t\t\"path\": \"dr-parsley\"\n\t\t}\n\t],\n\t\"settings\": {\"files.exclude\": {\"**/__generated__/\": true}}\n}' > ~/parsley/ph.code-workspace"
+alias showgen="printf '{\n\t\"folders\": [\n\t\t{\n\t\t\t\"path\": \"dr-parsley\"\n\t\t}\n\t],\n\t\"settings\": {\"files.exclude\": {\"**/__generated__/\": false}}\n}' > ~/parsley/ph.code-workspace"
+alias flo="npm run flow"
+alias sto="npm run storybook"
