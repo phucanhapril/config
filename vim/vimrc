@@ -18,6 +18,4 @@ hi SpecialKey ctermfg=61 ctermbg=NONE cterm=NONE guifg=#6272a4 guibg=NONE gui=NO
 " allow backspace
 set backspace=indent,eol,start
 
-" dracula theme
 syntax on
-color dracula

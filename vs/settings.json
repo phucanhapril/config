@@ -1,16 +1,16 @@
-{   
+{
+    "editor.fontFamily": "Operator Mono",
+    "editor.fontWeight": "200",
     "editor.formatOnPaste": true,
     "editor.minimap.enabled": false,
-    "editor.multiCursorModifier": "ctrlCmd",
     "editor.renderWhitespace": "all",
     "editor.tabSize": 2,
     "editor.wordWrap": "on",
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
-    "javascript.implicitProjectConfig.experimentalDecorators": true,
     "prettier.eslintIntegration": true,
     "terminal.integrated.fontWeightBold": "100",
-    "terminal.integrated.shell.osx": "zsh",
+    "terminal.integrated.shell.osx": "fish",
     "tslint.jsEnable": true,
     "typescript.updateImportsOnFileMove.enabled": "always",
     "vim.insertModeKeyBindings": [
@@ -26,29 +26,6 @@
                 ":wq"
             ]
         }
-    ],
-    "window.zoomLevel": -1,
-    "workbench.colorCustomizations": {
-        "terminal.foreground": "#ebebeb",
-        "terminal.ansiBlack": "#000000",
-        "terminal.ansiBlue": "#d1b3fe",
-        "terminal.ansiBrightBlack": "#686868",
-        "terminal.ansiBrightBlue": "#d1b3fe",
-        "terminal.ansiBrightCyan": "#9aedfe",
-        "terminal.ansiBrightGreen": "#5af78e",
-        "terminal.ansiBrightMagenta": "#ff92d0",
-        "terminal.ansiBrightRed": "#ff6e67",
-        "terminal.ansiBrightWhite": "#ffffff",
-        "terminal.ansiBrightYellow": "#f4f99d",
-        "terminal.ansiCyan": "#9aedfe",
-        "terminal.ansiGreen": "#5af78e",
-        "terminal.ansiMagenta": "#ff92d0",
-        "terminal.ansiRed": "#ff6e67",
-        "terminal.ansiWhite": "#c7c7c7",
-        "terminal.ansiYellow": "#f4f99d",
-        "terminal.selectionBackground": "#565a6d",
-        "terminalCursor.foreground": "#c7c7c7"
-    },
-    "workbench.colorTheme": "Dracula",
+    ]
 }
 
