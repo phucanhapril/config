@@ -1,4 +1,6 @@
 ## create symlinks to vim config
-```
-ln -s <path/to/config>/vim/vimrc ~/.vimrc
+
+```sh
+# assuming this repo is in ~/code
+ln -s ~/code/config/vim/vimrc ~/.vimrc
 ```

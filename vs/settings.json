@@ -1,31 +1,30 @@
 {
-    "editor.fontFamily": "Operator Mono",
-    "editor.fontWeight": "200",
-    "editor.formatOnPaste": true,
-    "editor.minimap.enabled": false,
-    "editor.renderWhitespace": "all",
-    "editor.tabSize": 2,
-    "editor.wordWrap": "on",
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    "prettier.eslintIntegration": true,
-    "terminal.integrated.fontWeightBold": "100",
-    "terminal.integrated.shell.osx": "fish",
-    "tslint.jsEnable": true,
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "vim.insertModeKeyBindings": [
-        {
-            "before": ["j", "j"],
-            "after": ["<Esc>"]
-        }
-    ],
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": ["Z", "Z"],
-            "commands": [
-                ":wq"
-            ]
-        }
-    ]
+  "editor.fontFamily": "Operator Mono",
+  "editor.fontWeight": 300,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "all",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "prettier.eslintIntegration": true,
+  "terminal.integrated.fontWeightBold": "100",
+  "terminal.integrated.shell.osx": "fish",
+  "tslint.jsEnable": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["Z", "Z"],
+      "commands": [":wq"]
+    }
+  ],
+  "workbench.colorTheme": "Noctis Lilac"
 }
-
