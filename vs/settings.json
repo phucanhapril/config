@@ -1,6 +1,7 @@
 {
   "editor.fontFamily": "Operator Mono",
-  "editor.fontWeight": 300,
+  "editor.fontSize": 15,
+  "editor.fontWeight": "300",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
@@ -26,5 +27,6 @@
       "commands": [":wq"]
     }
   ],
-  "workbench.colorTheme": "Noctis Lilac"
+  "workbench.colorTheme": "Noctis Lilac",
+  "window.zoomLevel": 0
 }

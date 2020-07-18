@@ -1,4 +1,4 @@
-## create symlinks to vim config
+## create symlink to vim config
 
 ```sh
 # assuming this repo is in ~/code
