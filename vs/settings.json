@@ -1,7 +1,8 @@
 {
-  "editor.fontFamily": "Operator Mono",
-  "editor.fontSize": 15,
-  "editor.fontWeight": "300",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "Cartograph CF",
+  "editor.fontSize": 13,
+  "editor.fontWeight": "400",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
@@ -10,8 +11,20 @@
   "editor.wordWrap": "on",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  "prettier.eslintIntegration": true,
-  "terminal.integrated.fontWeightBold": "100",
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "python.formatting.blackPath": "/usr/local/bin/black",
+  "python.formatting.provider": "black",
+  "python.pythonPath": "/usr/local/bin/python3",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.tabSize": 4
+  },
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "underline",
+  "terminal.integrated.fontFamily": "Cartograph CF",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontWeight": "400",
+  "terminal.integrated.fontWeightBold": "600",
   "terminal.integrated.shell.osx": "fish",
   "tslint.jsEnable": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
@@ -27,6 +40,27 @@
       "commands": [":wq"]
     }
   ],
-  "workbench.colorTheme": "Noctis Lilac",
-  "window.zoomLevel": 0
+  "window.zoomLevel": 1,
+  "workbench.colorCustomizations": {
+    "terminal.background": "#2F2559",
+    "terminal.foreground": "#E0E0E0",
+    "terminalCursor.foreground": "#E0E0E0",
+    "terminal.ansiBlack": "#282A36",
+    "terminal.ansiBrightBlack": "#44475A",
+    "terminal.ansiMagenta": "#FF5555",
+    "terminal.ansiBrightMagenta": "#FF6E67",
+    "terminal.ansiGreen": "#50FA7B",
+    "terminal.ansiBrightGreen": "#5AF78E",
+    "terminal.ansiYellow": "#F1FA8C",
+    "terminal.ansiBrightYellow": "#F1FA8C",
+    "terminal.ansiBlue": "#BD93F9",
+    "terminal.ansiBrightBlue": "#CAA9FA",
+    "terminal.ansiRed": "#FF79C6",
+    "terminal.ansiBrightRed": "#FF92D0",
+    "terminal.ansiCyan": "#8BE9FD",
+    "terminal.ansiBrightCyan": "#9AEDFE",
+    "terminal.ansiWhite": "#BFBFBF",
+    "terminal.ansiBrightWhite": "#FFFFFF"
+  },
+  "workbench.colorTheme": "Noctis Lilac"
 }
