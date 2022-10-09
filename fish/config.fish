@@ -5,36 +5,45 @@ set theme_short_path yes
 # general
 alias vf="vim ~/code/config/fish/config.fish"
 alias sf="source ~/code/config/fish/config.fish"
+alias home="cd ~"
 alias hyper:config="vim ~/code/config/hyper/config.js"
 
 # headway
 alias hw="cd ~/code/headway"
+alias devenv="export ENVIRONMENT=development"
 alias mam="hw && cd mamba"
 alias mams="mam && vup && make start"
-alias mamt="mam && make test"
-alias ago="hw && cd patient"
-alias agos="ago && yarn start"
-alias atl="hw && cd atlas"
-alias atls="atl && yarn start"
-alias sig="hw && cd sigmund"
-alias sigs="sig && yarn start"
-alias sha="hw && cd shared/package"
+function mamt
+  mam && export ENVIRONMENT=unittest && vup && ./venv/bin/pytest -n 4 --dist loadfile $argv -s -v -ra -Wignore
+end
+alias mamts="mam && make test"
+alias mamp="ps -fA | grep python" # get mamba processes to kill :-) with kill -9 <pid>
+alias web="hw && cd web"
+alias ago="hw && cd web/apps/patient"
+alias agos="web && yarn workspace @headway/patient start"
+alias atl="hw && cd web/apps/atlas"
+alias atls="web && yarn workspace @headway/atlas start"
+alias sig="hw && cd web/apps/sigmund"
+alias sigs="web && yarn workspace @headway/sigmund start"
 alias fixt="hw && cd fixtures"
-alias etest="hw && cd e2e && yarn run cypress:run"
-alias etest:open="hw && cd e2e && yarn run cypress:open"
+alias cy="hw && cd e2e && yarn run cypress:open"
+alias play="hw && cd playwright"
+alias plays="play && yarn playwright test"
 
-# yarn link
+# shared folder
 alias lsha="yarn link @headway/shared"
 alias usha="yarn unlink @headway/shared"
 alias byenode="rm -rf node_modules"
+alias yarp="sha && yarn add --dev @material-ui/core@^4.7.1 @material-ui/icons@^4.3.0 @material-ui/lab@^4.0.0-alpha.46 @material-ui/pickers@^3.2.10 formik@^2.1.3 react@^16.13.1 react-dom@16.13.1"
 
 # db
 alias celery:start="mam && vup && make start-celery"
-alias db:start="pg_ctl -D /usr/local/var/postgres start"
-alias db:up="mam && make db-upgrade"
-alias db:down="mam && make db-downgrade"
+alias celery:stop="make stop-celery"
+alias db:start="pg_ctl -D /usr/local/var/postgresql@10 start"
+alias db:upgrade="mam && make db-upgrade"
+alias db:downgrade="mam && make db-downgrade"
 alias db:migrate="mam && make db-migrate"
-alias db:loadfix="fixt && PGDATABASE=headway-local PGUSER=masteruser ./load.sh test && db:migrate"
+alias db:loadfix="fixt && PGDATABASE=headway-local PGUSER=masteruser ./load.sh test"
 alias db:savefix="fixt && PGDATABASE=headway-local PGUSER=masteruser ./create.sh test"
 function db:sh
   if count $argv > /dev/null
@@ -43,6 +52,7 @@ function db:sh
     psql -d headway-local
   end
 end
+alias redis:start="brew services start redis"
 
 # python
 alias py="python3"
@@ -77,5 +87,14 @@ alias gunstage="git reset"
 alias guncommit="git reset HEAD^"
 function gpresquash
   git fetch
-  git reset (git merge-base master $argv)
+  git reset (git merge-base main $argv)
 end
+
+# headway openssl stuff
+export PYCURL_SSL_LIBRARY=openssl
+export LDFLAGS=-L/usr/local/opt/openssl/lib
+export CPPFLAGS=-I/usr/local/opt/openssl/include
+
+status is-login; and pyenv init --path | source
+pyenv init - | source
+pyenv virtualenv-init - | source

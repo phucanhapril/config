@@ -7,11 +7,12 @@ echo /usr/local/bin/fish | sudo tee -a /etc/shells
 chsh -s /usr/local/bin/fish
 ```
 
-## create symlink to fish config
+## create symlinks to fish config
 
 ```sh
 # assuming this repo in ~/code
 ln -s ~/code/config/fish/config.fish ~/.config/fish/config.fish
+ln -s ~/code/config/fish/fish_variables ~/.config/fish/fish_variables
 ```
 
 ## install nvm
